@@ -1,48 +1,49 @@
 .pokemon-card
+  background: #dec552
   display: flex
   flex-direction: column
   font-family: "Signika", arial, sans-serif
-  margin: 5px 5px 50px
-  background: #797979
-  border-radius: 5px
-
+  margin: 0 5px 50px
+  width: 500px
 
   &__image
-    background: #ffcb05
-    border-radius: 30px
-    align-items: center
-    margin: 5px
+    background: #F2F2F2
 
-  &__name,
-  &__number
-    padding: 0 20px
-
+  &__number,
   &__name
-    color: #313131
-    font-size: 115%
-    margin: 0.5em 5px
+    padding: 0 10px
 
   &__number
     color: #919191
     font-size: 80%
     padding-top: 2px
 
+  &__name
+    color: #313131
+    font-size: 145%
+    margin: 0.5em 0 5px
+    text-transform: capitalize
+
   &__types
     display: flex
-    border-radius: 10px
-    margin: 5px
 
   &__type
-    margin: 0 10px
-    padding: 5px
     border-radius: 3px
-    line-height: 18px
-    max-width: 110px
-    width: 38.4375%
-    float: left
-    text-transform: none
     font-size: 11px
+    line-height: 18px
+    margin: 0 10px
+    max-width: 110px
     text-align: center
+    text-transform: capitalize
+    width: 38.4375%
+
+    &--grass
+      background: #9bcc50
+      color: #212121
+
+    &--poison
+      background: #b97fc9
+      color: #FFFFFF
 
     &--bug
       background: -webkit-linear-gradient(180deg, #729f3f 50%, #729f3f 50%)
@@ -205,6 +206,3 @@
       background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%)
       background-color: #4592c4
       color: #fff
-
-
-
